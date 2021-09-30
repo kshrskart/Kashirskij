@@ -2,10 +2,9 @@
 n = int(input())
 m = int(input())
 k = int(input())
-k1 = 0
-def F(n,m,k,k1):
-  k1 = (n*m) / 2
-  if (k1==k): 
-    return 'Да'
-  elif (k1!=k): return 'Нет'
-print(F(n,m,k,k1))
+def F(n,m,k):
+   if(n * m > k and (k % m == 0 or k % n == 0)):
+        return "Да"
+    else:
+        return "Нет"
+print(F(n,m,k))

@@ -1,6 +1,5 @@
 # -- coding: utf-8 --
 x = 2
 y = 3
-x1 = y
-y1 = x
-print(x, y,':',x1, y1)
+x,y=y,x
+print(x, y)
